@@ -35,7 +35,7 @@ for (i = 0; i < files.length; i++) {
     //console.log(fileDatasplit[0] + fileDatasplit2[0] + fileDatasplit2[1] + fileDataBrackets)
     //console.log(fileDatasplit[0].toString() + fileDatasplit2[0].toString() + fileDatasplit2[1].toString() + fileDataBrackets)
 
-    fileDatafinal = fileDatasplit[0].toString() + fileDatasplit2[0].toString() + fileDatasplit2[1].toString() + fileDataBrackets
+    fileDatafinal = fileDatasplit[0].toString() + fileDatasplit2[0].toString() + fileDatasplit2[1].toString() + fileDataBrackets + "\n"
 
     fs.writeFileSync("./output/" + files[i], fileDatafinal, function(err, result) {
         if(err) console.log('error', err);
