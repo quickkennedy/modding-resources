@@ -1,5 +1,5 @@
 var fs = require("fs")
-// gotta have filesystem for this, otherwise node.js cant do the funny
+// this allows us to use filesystem, without it node.js cannot edit files.
 
 var crosshairFile = "test"
 // this is the .vmt that we need to have beforehand.
