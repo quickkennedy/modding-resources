@@ -1,0 +1,109 @@
+WeaponData
+{
+	// Attributes Base.
+	"printname"		"#TF_Weapon_AAGun"
+	"BuiltRightHanded"	"0"
+	"weight"		"3"
+	"WeaponType"		"primary"
+	"ITEM_FLAG_NOITEMPICKUP" 	"1"
+		
+	// Attributes TF.
+	"Damage"			"100"
+	"Spread"			"0.0"
+	"PunchAngle"		"3.0"
+	"TimeFireDelay"		"0.5"
+	"ProjectileType"	"projectile_rocket"
+
+	// Ammo & Clip.
+	"primary_ammo"		"TF_AMMO_PRIMARY"
+	"secondary_ammo"	"None"
+	"clip_size"		"-1"
+	"MaxAmmo"		"40"
+	"SpawnAmmo"		"40"
+
+	// Buckets.
+	"bucket"		"0"
+	"bucket_position"	"0"
+
+	// Models.
+	"viewmodel"		"models/weapons/v_models/v_browning.mdl"
+	"playermodel"	"models/weapons/c_models/c_browning/c_browning.mdl"
+
+	// Muzzleflash
+	"MuzzleFlashModel"	"models/effects/muzzleflash/minigunmuzzle.mdl"
+	"MuzzleFlashParticleEffect" "muzzle_grenadelauncher"
+	
+	// Tracer.
+	"TracerEffect"		"bullet_tracer01"
+	"TracerFreq"		"2"
+	
+	// Brass shell.
+	"BrassModel"		"models/weapons/shells/shell_minigun.mdl"
+
+	// Explosions.
+	"ExplosionEffect"		"ExplosionCore_wall"
+	"ExplosionPlayerEffect"		"ExplosionCore_MidAir"
+	"ExplosionWaterEffect"		"ExplosionCore_MidAir_underwater"
+	
+	"HasCritExplosions"		"1"
+
+	"ExplosionSound"	"Weapon_Grenade_Mirv.Explode"
+	
+	// Sounds.
+	// Max of 16 per category (ie. max 16 "single_shot" sounds).
+	SoundData
+	{
+		"reload"		""
+		"empty"			""	
+		"single_shot"	"Weapon_AAGun.Fire"
+		"special1"		"Selection.HeavyEquipment1"
+		"special2"		"Selection.HeavyEquipment2"
+		"special3"		""
+		"burst"			"Weapon_AAGun.FireCrit"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"file"		"sprites/bucket_minigun"
+				"x"		"0"
+				"y"		"0"
+				"width"		"200"
+				"height"		"128"
+		}
+		"weapon_s"
+		{	
+				"file"		"sprites/bucket_minigun"
+				"x"		"0"
+				"y"		"0"
+				"width"		"200"
+				"height"		"128"
+		}
+		"ammo"
+		{
+				"file"		"sprites/a_icons1"
+				"x"			"55"
+				"y"			"60"
+				"width"		"73"
+				"height"	"15"
+		}
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"64"
+				"y"			"64"
+				"width"		"64"
+				"height"	"64"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+}

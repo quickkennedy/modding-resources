@@ -1,2 +1,2 @@
 # modding-resources
- resources for modders
+ resources for modders, things like decompiled scripts, crosshairs, etc.
