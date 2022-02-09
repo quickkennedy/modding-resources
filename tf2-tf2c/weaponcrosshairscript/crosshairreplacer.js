@@ -35,7 +35,7 @@ for (i = 0; i < files.length; i++) {
     // split removes the custom crosshair, so we add back the custom crosshair text and a single quotation mark to come after it
 
     fileDataSplit2 = fileDataSplit[1].split("}")
-    // we take the 2nd item in fileDataSplit to get the text after the custom crosshair, the "autoaim" section followed by the closing brackets
+    // we take the 2nd item in fileDataSplit to get the text after the custom crosshair, the "autoaim" section followed by the closing curly brackets
 
     fileDataBrackets = ""
     // there are 3 brackets at the end that this script does not copy because of the split we just made removing the 3 right curly brackets at the end
